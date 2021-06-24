@@ -5,7 +5,7 @@
 #
 #######################################
 def double_it(x):
-    return x *2
+    return x*2
 
 
 if __name__ == '__main__':
