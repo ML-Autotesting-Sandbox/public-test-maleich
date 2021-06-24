@@ -16,9 +16,8 @@ jobs:
         python-version: '3.x'
     - name: Install dependencies
       run: |
-        set -x
         python3 -m pip install --upgrade pip
-        pip install -r requirements.txt   
+        pip install -r requirements.txt
     - name: Test student program
       run: python3 -m pytest tests/test1.py >> .github/ISSUE_TEMPLATE/test-failure.md
     - name: Failure message
