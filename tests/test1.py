@@ -1,4 +1,4 @@
-from src/my_code import double_it
+from my_code import double_it
 
 
 def test_inc():
