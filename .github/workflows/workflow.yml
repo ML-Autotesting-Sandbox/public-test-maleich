@@ -30,3 +30,10 @@ jobs:
     - name: Lint student program
       run: flake8 src/my_code.py
 
+      -name:Success message
+      uses:machine-learning-apps/pr-comment@1.0.0
+      env:
+      GITHUB_TOKEN:${{secrets.GITHUB_TOKEN}}
+      with:
+      path:.github/ISSUE_TEMPLATE/test-success.md
+
