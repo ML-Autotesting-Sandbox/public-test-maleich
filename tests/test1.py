@@ -1,7 +1,7 @@
-from my_code import double_it
+import src.my_code
 
 
 def test_inc():
-    assert 8 == double_it(4)
-    assert 0 == double_it(0)
-    assert -2 == double_it(-1)
+    assert 8 == src.my_code.double_it(4)
+    assert 0 == src.my_code.double_it(0)
+    assert -2 == src.my_code.double_it(-1)
