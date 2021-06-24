@@ -19,7 +19,7 @@ jobs:
         python3 -m pip install --upgrade pip
         pip install -r requirements.txt   
     - name: Test student program
-      run: python3 -m pytest >> .github/ISSUE_TEMPLATE/test-failure.md
+      run: python3 -m pytest tests/test1.py >> .github/ISSUE_TEMPLATE/test-failure.md
     - name: Failure message
       if: failure()
       uses: machine-learning-apps/pr-comment@1.0.0
